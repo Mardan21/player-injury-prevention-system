@@ -172,3 +172,16 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Project specific
+data/raw/*.csv
+data/raw/*.json
+*.pkl
+*.joblib
+.env
+.DS_Store
+*.log
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
