@@ -10,7 +10,6 @@ def test_db_load():
     # Create collector instance
     collector = PlayerDataCollector()
     
-
     # Try loading to database
     print("\nLoading player data...")
     try:
@@ -32,21 +31,24 @@ def test_db_load():
         players_df, performance_df = collector.process_data(df)
         
         # Print some info about the data
-        print("\nPlayers DataFrame Preview:")
-        print(players_df.head())
-        print("\nPlayers DataFrame Info:")
-        print(players_df.info())
         
-        print("\nPerformance DataFrame Preview:")
-        print(performance_df.head())
-        print("\nPerformance DataFrame Info:")
-        print(performance_df.info())
+        # print("\nPlayers DataFrame Preview:")
+        # print(players_df.head())
+        # print("\nPlayers DataFrame Info:")
+        # print(players_df.info())
+        print(players_df.shape)
+        
+        # print("\nPerformance DataFrame Preview:")
+        # print(performance_df.head())
+        # print("\nPerformance DataFrame Info:")
+        # print(performance_df.info())
         
         # Check for missing values
-        print("\nChecking for missing values in players_df:")
-        print(players_df.isnull().sum())
-        print("\nChecking for missing values in performance_df:")
-        print(performance_df.isnull().sum())
+
+        # print("\nChecking for missing values in players_df:")
+        # print(players_df.isnull().sum())
+        # print("\nChecking for missing values in performance_df:")
+        # print(performance_df.isnull().sum())
         
     except Exception as e:
         print(f"Error processing data: {e}")

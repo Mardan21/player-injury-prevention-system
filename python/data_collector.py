@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 from db_config import engine
+from sqlalchemy import text
 import os
 
 class PlayerDataCollector:
@@ -208,9 +209,16 @@ class PlayerDataCollector:
 
         return players_df, performance_df
     
+
     def load_to_database(self, players_df, performance_df):
         """Load dataframe to PostgreSQL database"""
         try:
+            # First, clear existing data to prevent duplicates
+            with engine.connect() as conn:
+                conn.execute(text("DELETE FROM player_performance"))
+                conn.execute(text("DELETE FROM players"))
+                conn.commit()
+            
             # Load the players
             players_df.to_sql('players', engine, if_exists='append', index=False)
             print(f"Loaded {len(players_df)} records to players table")
@@ -248,55 +256,7 @@ class PlayerDataCollector:
                 else:
                     performance_df[col] = performance_df[col].round(0).astype('Int64')
 
-            # Get list of columns that match our schema
-            # performance_columns = [
-            #     'player_id', 'minutes_played', 'games_played', 'games_started',
-            #     'carries', 'total_carry_distance', 'progressive_carry_distance',
-            #     'progressive_carries', 'carries_into_18', 'dispossessed_carries',
-            #     'missed_carries', 'aerial_duels_won', 'aerial_duels_lost',
-            #     'aerial_duels_won_percentage', 'passes_completed', 'passes_attempted',
-            #     'pass_completion_percentage', 'total_passes_distance',
-            #     'progressive_pass_distance', 'progressive_passes_count',
-            #     'progressive_pass_received', 'short_passes_completed',
-            #     'short_passes_attempted', 'short_pass_completion_percentage',
-            #     'medium_passes_completed', 'medium_passes_attempted',
-            #     'medium_pass_completion_percentage', 'long_passes_completed',
-            #     'long_passes_attempted', 'long_pass_completion_percentage',
-            #     'shots', 'shots_on_target', 'shots_on_target_percentage',
-            #     'goals', 'goals_per_shot', 'goals_per_shot_on_target',
-            #     'assists', 'assisted_shots', 'completed_passes_into_18',
-            #     'completed_crosses_into_18', 'live_ball_passes',
-            #     'dead_ball_passes', 'passes_attempted_from_free_kicks',
-            #     'passes_offside', 'crosses', 'offsides',
-            #     'passes_blocked_by_opponent', 'shot_creating_actions',
-            #     'shot_creating_actions_from_live_ball',
-            #     'shot_creating_actions_from_dead_ball',
-            #     'successful_dribbles_leading_to_shot',
-            #     'shots_leading_to_another_shot', 'fouls_drawn_leading_to_shot',
-            #     'defensive_actions_leading_to_shot', 'goal_creating_actions',
-            #     'live_ball_passes_leading_to_goal',
-            #     'dead_ball_passes_leading_to_goal',
-            #     'successful_dribbles_leading_to_goal',
-            #     'shots_leading_to_goal_scoring_shot',
-            #     'fouls_drawn_leading_to_goal',
-            #     'defensive_actions_leading_to_goal', 'tackles', 'tackles_won',
-            #     'tackles_in_defensive_third', 'tackles_in_middle_third',
-            #     'tackles_in_attacking_third', 'number_of_dribblers_tackled',
-            #     'percentage_of_dribblers_tackled',
-            #     'number_of_times_dribbled_past_by_opponent', 'interceptions',
-            #     'number_of_tackles_and_interceptions', 'blocks', 'shots_blocked',
-            #     'passes_blocked', 'clearances', 'errors_leading_to_opponent_shot',
-            #     'fouls_committed', 'fouls_drawn', 'yellow_cards', 'red_cards', 
-            #     'second_yellow_card', 'touches', 'number_attempts_take_on_defender',
-            #     'number_defenders_taken_on_successfully', 'percentage_of_take_on_success',
-            #     'number_times_tackled_by_defender_during_take_on',
-            #     'percentage_tackled_by_defender_during_take_on', 'pass_received', 
-            #     'penalty_kicks_won', 'penalty_kicks_conceded', 'penalty_kicks_attempted', 
-            #     'own_goals', 'number_of_loose_balls_recovered', 'season'
-            # ]
-
             performance_columns = ['player_id'] + [col for col in performance_df.columns if col not in ['player_id', 'player_name']]
-
             performance_df = performance_df[performance_columns]
 
             # Load the performance data
@@ -307,6 +267,64 @@ class PlayerDataCollector:
         except Exception as e:
             print(f"Error loading to database: {e}")
             return False
+    
+    # def load_to_database(self, players_df, performance_df):
+    #     """Load dataframe to PostgreSQL database"""
+    #     try:
+    #         # Load the players
+    #         players_df.to_sql('players', engine, if_exists='append', index=False)
+    #         print(f"Loaded {len(players_df)} records to players table")
+
+    #         # Get the player_ids for the performance data
+    #         with engine.connect() as conn:
+    #             conn.execute("DELETE FROM player_performance")
+    #             conn.execute("DELETE FROM players")
+    #             conn.commit()
+                
+    #             player_ids = pd.read_sql(
+    #                 "SELECT player_id, player_name FROM players WHERE player_name IN %s",
+    #                 conn,
+    #                 params=(tuple(players_df['player_name']),)
+    #             )
+            
+    #         # Add player_name back to performance_df for merging
+    #         performance_df['player_name'] = players_df['player_name']
+            
+    #         # Merge player_ids with performance data
+    #         performance_df = performance_df.merge(
+    #             player_ids,
+    #             on='player_name',
+    #             how='left'
+    #         )
+
+    #         # Verify we have player_ids for all records
+    #         if performance_df['player_id'].isnull().any():
+    #             print("Warning: Some performance records could not be matched to players")
+    #             print(performance_df[performance_df['player_id'].isnull()]['player_name'].unique())
+
+    #         # Convert numeric columns to appropriate types
+    #         numeric_columns = performance_df.select_dtypes(include=['float64']).columns
+    #         for col in numeric_columns:
+    #             if 'percentage' in col.lower():
+    #                 performance_df[col] = performance_df[col].round(2)
+    #             elif 'distance' in col.lower():
+    #                 performance_df[col] = performance_df[col].round(2)
+    #             else:
+    #                 performance_df[col] = performance_df[col].round(0).astype('Int64')
+
+
+    #         performance_columns = ['player_id'] + [col for col in performance_df.columns if col not in ['player_id', 'player_name']]
+
+    #         performance_df = performance_df[performance_columns]
+
+    #         # Load the performance data
+    #         performance_df.to_sql('player_performance', engine, if_exists='append', index=False)
+    #         print(f"Loaded {len(performance_df)} records to player_performance table")
+
+    #         return True
+    #     except Exception as e:
+    #         print(f"Error loading to database: {e}")
+    #         return False
 
 if __name__ == "__main__":
     collector = PlayerDataCollector()

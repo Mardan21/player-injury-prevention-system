@@ -1,0 +1,19 @@
+{
+  "Report Date": "2025-06-02 12:23:55",
+  "Database Stats": {
+    "Total Players": 2689,
+    "Performance Records": 3007
+  },
+  "Risk Analysis": {
+    "Critical Risk Players": 148,
+    "High Risk Players": 894,
+    "Moderate Risk Players": 1965,
+    "Low Risk Players": 0
+  },
+  "Recommendations": [
+    "Monitor 148 players in critical risk category immediately",
+    "Schedule recovery sessions for 894 high-risk players",
+    "Review training intensity for teams with high workload variance",
+    "Implement rotation policy for players over 30 with high minutes"
+  ]
+}

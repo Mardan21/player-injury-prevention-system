@@ -1,0 +1,21 @@
+player_id,player_name,position,team,season,avg_minutes_per_game,tackles_per_90,interceptions_per_90,pressures_per_90,carries_per_90,progressive_carries_per_90,distance_per_90,workload_score,workload_risk_level
+16211,Carlos Álvarez,FW,Sevilla,2023-2024,10.0,0.0,0.0,,0.0,0.0,0.0,,LOW
+5502,Roberto Arroyo,MF,Valladolid,2023-2024,15.0,5.0,0.0,,40.0,5.0,190.0,,LOW
+8191,Roberto Arroyo,MF,Valladolid,2023-2024,15.0,5.0,0.0,,40.0,5.0,190.0,,LOW
+10880,Roberto Arroyo,MF,Valladolid,2023-2024,15.0,5.0,0.0,,40.0,5.0,190.0,,LOW
+1,Brenden Aaronson,MFFW,Leeds United,2023-2024,79.8,2.0,0.0,,27.0,2.0,136.1,,LOW
+2690,Brenden Aaronson,MFFW,Leeds United,2023-2024,79.8,2.0,0.0,,27.0,2.0,136.1,,LOW
+5379,Brenden Aaronson,MFFW,Leeds United,2023-2024,79.8,2.0,0.0,,27.0,2.0,136.1,,LOW
+8068,Brenden Aaronson,MFFW,Leeds United,2023-2024,79.8,2.0,0.0,,27.0,2.0,136.1,,LOW
+10757,Brenden Aaronson,MFFW,Leeds United,2023-2024,79.8,2.0,0.0,,27.0,2.0,136.1,,LOW
+13446,Brenden Aaronson,MFFW,Leeds United,2023-2024,79.8,2.0,0.0,,27.0,2.0,136.1,,LOW
+16135,Brenden Aaronson,MFFW,Leeds United,2023-2024,79.8,2.0,0.0,,27.0,2.0,136.1,,LOW
+2,Yunis Abdelhamid,DF,Reims,2023-2024,90.0,2.0,2.0,,40.0,1.0,234.2,,LOW
+2691,Yunis Abdelhamid,DF,Reims,2023-2024,90.0,2.0,2.0,,40.0,1.0,234.2,,LOW
+5380,Yunis Abdelhamid,DF,Reims,2023-2024,90.0,2.0,2.0,,40.0,1.0,234.2,,LOW
+8069,Yunis Abdelhamid,DF,Reims,2023-2024,90.0,2.0,2.0,,40.0,1.0,234.2,,LOW
+10758,Yunis Abdelhamid,DF,Reims,2023-2024,90.0,2.0,2.0,,40.0,1.0,234.2,,LOW
+13447,Yunis Abdelhamid,DF,Reims,2023-2024,90.0,2.0,2.0,,40.0,1.0,234.2,,LOW
+16136,Yunis Abdelhamid,DF,Reims,2023-2024,90.0,2.0,2.0,,40.0,1.0,234.2,,LOW
+3,Himad Abdelli,MFFW,Angers,2023-2024,55.0,3.0,1.0,,48.0,3.0,298.5,,LOW
+13522,Carlos Álvarez,FW,Sevilla,2023-2024,10.0,0.0,0.0,,0.0,0.0,0.0,,LOW
