@@ -176,6 +176,12 @@ cython_debug/
 # Project specific
 data/raw/*.csv
 data/raw/*.json
+data/injuries/raw/*.csv
+data/injuries/raw/*.rds
+data/injuries/processed/temp_*
+r_scripts/.RData
+r_scripts/.Rhistory
+
 *.pkl
 *.joblib
 .env
