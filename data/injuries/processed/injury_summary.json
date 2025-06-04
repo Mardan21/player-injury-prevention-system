@@ -1,0 +1,26 @@
+{
+  "season": ["22/23"],
+  "total_injuries": [74],
+  "unique_players": [0],
+  "injuries_by_category": {
+    "ankle": [2],
+    "back": [1],
+    "calf": [3],
+    "groin": [5],
+    "hamstring": [14],
+    "knee": [14],
+    "muscle": [2],
+    "other": [25],
+    "thigh": [6],
+    "upper_body": [2]
+  },
+  "injuries_by_severity": {
+    "career-threatening": [4],
+    "minor": [62],
+    "severe": [8]
+  },
+  "date_range": {
+    "min_date": ["Inf"],
+    "max_date": ["-Inf"]
+  }
+}

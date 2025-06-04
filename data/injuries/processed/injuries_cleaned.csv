@@ -1,0 +1,75 @@
+player_name,player_name_normalized,injury_date,return_date,days_out,injury_type,injury_category,severity,season
+Zack Steffen,Zack Steffen,2023-06-01,2023-12-31,214,Knee surgery,knee,minor,22/23
+Zack Steffen,Zack Steffen,2022-08-26,2022-09-18,24,Knee problems,knee,minor,22/23
+Rúben Dias,Rúben Dias,2022-12-22,2023-01-15,25,Hamstring injury,hamstring,minor,22/23
+Nathan Aké,Nathan Aké,2023-05-07,2023-05-27,21,Hamstring injury,hamstring,minor,22/23
+Nathan Aké,Nathan Aké,2023-04-19,2023-05-01,13,Hamstring muscle injury,hamstring,minor,22/23
+John Stones,John Stones,2023-01-27,2023-03-01,34,Hamstring injury,hamstring,minor,22/23
+John Stones,John Stones,2022-09-26,2022-10-20,25,Hamstring injury,hamstring,minor,22/23
+Aymeric Laporte,Aymeric Laporte,2023-02-21,2023-02-24,4,Ill,other,minor,22/23
+Aymeric Laporte,Aymeric Laporte,2022-06-30,2022-10-03,96,Knee surgery,knee,career-threatening,22/23
+Kyle Walker,Kyle Walker,2022-11-18,2022-11-22,5,Fitness,other,minor,22/23
+Kyle Walker,Kyle Walker,2022-10-03,2022-11-17,46,Groin injury,groin,minor,22/23
+Kalvin Phillips,Kalvin Phillips,2022-08-26,2022-11-08,75,Shoulder injury,upper_body,severe,22/23
+Máximo Perrone,Máximo Perrone,2022-08-23,2022-10-14,53,Pneumothorax,other,minor,22/23
+Claudio Gomes,Claudio Gomes,2023-01-16,2023-02-06,22,Broken hand,other,minor,22/23
+Kevin De Bruyne,Kevin De Bruyne,2023-04-26,2023-05-04,9,Foot bruise,other,severe,22/23
+Kevin De Bruyne,Kevin De Bruyne,2023-02-21,2023-02-24,4,Ill,other,minor,22/23
+Sergio Gómez,Sergio Gómez,2022-07-01,2022-08-03,34,Pubic bone bruise,other,minor,22/23
+Phil Foden,Phil Foden,2023-03-26,2023-04-17,23,Appendectomy,other,minor,22/23
+Erling Haaland,Erling Haaland,2023-03-21,2023-04-03,14,Groin problems,groin,minor,22/23
+Erling Haaland,Erling Haaland,2022-10-26,2022-11-04,10,Foot bruise,other,minor,22/23
+Julián Alvarez,Julián Alvarez,2022-03-04,2022-03-06,3,Ill,other,minor,22/23
+William Saliba,William Saliba,2023-03-16,2023-06-20,97,Back injury,back,career-threatening,22/23
+Oleksandr Zinchenko,Oleksandr Zinchenko,2023-05-07,2023-08-18,104,Calf muscle tear,calf,minor,22/23
+Oleksandr Zinchenko,Oleksandr Zinchenko,2023-04-14,2023-04-17,4,unknown injury,other,minor,22/23
+Oleksandr Zinchenko,Oleksandr Zinchenko,2022-09-16,2022-11-01,47,Calf injury,calf,minor,22/23
+Oleksandr Zinchenko,Oleksandr Zinchenko,2022-08-26,2022-09-03,9,Knee problems,knee,severe,22/23
+Takehiro Tomiyasu,Takehiro Tomiyasu,2023-03-16,2023-07-01,108,Knee surgery,knee,minor,22/23
+Takehiro Tomiyasu,Takehiro Tomiyasu,2022-11-03,2022-11-15,13,muscular problems,other,minor,22/23
+Ainsley Maitland-Niles,Ainsley MaitlandNiles,2023-03-06,2023-03-16,11,unknown injury,other,minor,22/23
+Thomas Partey,Thomas Partey,2022-09-22,2022-09-30,9,Knock,other,severe,22/23
+Thomas Partey,Thomas Partey,2022-08-25,2022-09-15,22,Thigh problems,thigh,minor,22/23
+Mohamed Elneny,Mohamed Elneny,2023-01-14,2023-09-20,250,Knee injury,knee,minor,22/23
+Mohamed Elneny,Mohamed Elneny,2022-08-27,2022-11-01,67,Thigh problems,thigh,minor,22/23
+Emile Smith Rowe,Emile Smith Rowe,2023-01-25,2023-02-16,23,Thigh problems,thigh,minor,22/23
+Emile Smith Rowe,Emile Smith Rowe,2022-09-10,2023-01-09,122,Groin surgery,groin,minor,22/23
+Gabriel Martinelli,Gabriel Martinelli,2023-05-14,2023-06-01,19,Ankle injury,ankle,minor,22/23
+Nicolas Pépé,Nicolas Pépé,2023-04-20,2023-08-20,123,Knee injury,knee,minor,22/23
+Nicolas Pépé,Nicolas Pépé,2023-04-08,2023-04-17,10,Calf injury,calf,minor,22/23
+Nicolas Pépé,Nicolas Pépé,2023-01-28,2023-03-15,47,Knee injury,knee,minor,22/23
+Reiss Nelson,Reiss Nelson,2022-12-22,2023-02-12,53,Thigh problems,thigh,minor,22/23
+Reiss Nelson,Reiss Nelson,2022-08-08,2022-10-03,57,Thigh problems,thigh,minor,22/23
+Gabriel Jesus,Gabriel Jesus,2022-12-02,2023-03-11,100,Knee injury,knee,minor,22/23
+Eddie Nketiah,Eddie Nketiah,2023-03-02,2023-04-13,43,Ankle injury,ankle,minor,22/23
+Khayon Edwards,Khayon Edwards,2022-08-25,2022-10-05,42,unknown injury,other,minor,22/23
+Edouard Mendy,Edouard Mendy,2023-01-05,2023-03-16,71,Shoulder injury,upper_body,severe,22/23
+Edouard Mendy,Edouard Mendy,2022-12-08,2023-01-04,28,Knock,other,minor,22/23
+Marcus Bettinelli,Marcus Bettinelli,2023-04-27,2023-10-16,173,unknown injury,other,minor,22/23
+Wesley Fofana,Wesley Fofana,2022-12-20,2023-02-13,56,Knee injury,knee,minor,22/23
+Wesley Fofana,Wesley Fofana,2022-10-06,2022-12-16,72,Knee injury,knee,severe,22/23
+Benoît Badiashile,Benoît Badiashile,2023-05-19,2023-08-31,105,Hamstring injury,hamstring,minor,22/23
+Benoît Badiashile,Benoît Badiashile,2022-10-13,2022-10-20,8,Adductor injury,groin,severe,22/23
+Benoît Badiashile,Benoît Badiashile,2022-07-15,2022-08-10,27,Muscle injury,muscle,minor,22/23
+Trevoh Chalobah,Trevoh Chalobah,2023-02-25,2023-02-28,4,Fitness,other,minor,22/23
+Trevoh Chalobah,Trevoh Chalobah,2022-08-29,2022-08-31,3,Fitness,other,minor,22/23
+Kalidou Koulibaly,Kalidou Koulibaly,2023-04-12,2023-05-20,39,Hamstring injury,hamstring,minor,22/23
+César Azpilicueta,César Azpilicueta,2023-02-18,2023-03-10,21,Head injury,other,minor,22/23
+Thiago Silva,Thiago Silva,2023-02-27,2023-04-10,43,Ligament injury,other,minor,22/23
+Thiago Silva,Thiago Silva,2023-02-26,2023-04-10,44,Knee injury,knee,minor,22/23
+Ben Chilwell,Ben Chilwell,2023-05-06,2023-06-03,29,Hamstring injury,hamstring,minor,22/23
+Ben Chilwell,Ben Chilwell,2022-11-03,2023-01-31,90,Hamstring injury,hamstring,career-threatening,22/23
+Marc Cucurella,Marc Cucurella,2023-04-25,2023-06-02,39,Muscle injury,muscle,minor,22/23
+Abdul Rahman Baba,Abdul Rahman Baba,2023-02-15,2023-05-15,90,unknown injury,other,career-threatening,22/23
+Abdul Rahman Baba,Abdul Rahman Baba,2023-02-01,2023-02-05,5,Tonsillitis,other,minor,22/23
+Abdul Rahman Baba,Abdul Rahman Baba,2022-09-29,2022-10-16,18,Hamstring injury,hamstring,minor,22/23
+Reece James,Reece James,2023-04-25,2023-05-31,37,Hamstring injury,hamstring,minor,22/23
+Reece James,Reece James,2023-03-26,2023-03-31,6,Thigh problems,thigh,minor,22/23
+Reece James,Reece James,2023-03-09,2023-03-15,7,Ill,other,severe,22/23
+Reece James,Reece James,2023-03-01,2023-03-05,5,Hamstring injury,hamstring,minor,22/23
+Reece James,Reece James,2022-12-27,2023-01-31,36,Knee injury,knee,minor,22/23
+Reece James,Reece James,2022-10-13,2022-12-12,61,Knee injury,knee,minor,22/23
+Denis Zakaria,Denis Zakaria,2023-01-13,2023-02-13,32,Hamstring injury,hamstring,minor,22/23
+N'Golo Kanté,NGolo Kanté,2023-05-12,2023-05-29,18,Groin injury,groin,minor,22/23
+N'Golo Kanté,NGolo Kanté,2023-02-20,2023-03-12,21,Fitness,other,minor,22/23
+N'Golo Kanté,NGolo Kanté,2022-08-15,2023-02-20,190,Hamstring injury,hamstring,minor,22/23

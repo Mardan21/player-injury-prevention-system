@@ -1,0 +1,119 @@
+{
+  "integration_date": "2025-06-03 22:32:07",
+  "injury_events_loaded": 49,
+  "players_with_injury_history": 26,
+  "top_injury_prone_players": [
+    {
+      "player_name": "Edouard Mendy",
+      "team": "Chelsea",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    },
+    {
+      "player_name": "Emile Smith Rowe",
+      "team": "Arsenal",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    },
+    {
+      "player_name": "Erling Haaland",
+      "team": "Manchester City",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    },
+    {
+      "player_name": "John Stones",
+      "team": "Manchester City",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    },
+    {
+      "player_name": "Reece James",
+      "team": "Chelsea",
+      "injury_prone_score": 1.0,
+      "total_injuries": 6
+    },
+    {
+      "player_name": "Trevoh Chalobah",
+      "team": "Chelsea",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    },
+    {
+      "player_name": "Ben Chilwell",
+      "team": "Chelsea",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    },
+    {
+      "player_name": "Wesley Fofana",
+      "team": "Chelsea + Leicester City",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    },
+    {
+      "player_name": "Takehiro Tomiyasu",
+      "team": "Arsenal",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    },
+    {
+      "player_name": "Aymeric Laporte",
+      "team": "Manchester City",
+      "injury_prone_score": 1.0,
+      "total_injuries": 2
+    }
+  ],
+  "injury_statistics_by_category": [
+    {
+      "injury_category": "other",
+      "count": 15,
+      "avg_days": 11.8
+    },
+    {
+      "injury_category": "knee",
+      "count": 10,
+      "avg_days": 83.2
+    },
+    {
+      "injury_category": "hamstring",
+      "count": 8,
+      "avg_days": 36.375
+    },
+    {
+      "injury_category": "thigh",
+      "count": 6,
+      "avg_days": 38.0
+    },
+    {
+      "injury_category": "groin",
+      "count": 3,
+      "avg_days": 60.666666666666664
+    },
+    {
+      "injury_category": "upper_body",
+      "count": 2,
+      "avg_days": 73.0
+    },
+    {
+      "injury_category": "calf",
+      "count": 2,
+      "avg_days": 75.5
+    },
+    {
+      "injury_category": "ankle",
+      "count": 1,
+      "avg_days": 43.0
+    },
+    {
+      "injury_category": "muscle",
+      "count": 1,
+      "avg_days": 39.0
+    },
+    {
+      "injury_category": "back",
+      "count": 1,
+      "avg_days": 97.0
+    }
+  ]
+}
