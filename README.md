@@ -12,11 +12,10 @@ An ML-powered system to predict football player injuries and optimize squad rota
 ## 📊 Current Progress
 - [x] Project setup and structure
 - [x] Data collection module
-- [ ] Database schema
-- [ ] SQL analytics queries
-- [ ] ML prediction model
-- [ ] Tableau dashboards
-- [ ] Web application
+- [x] Database schema
+- [x] SQL analytics queries
+- [x] ML prediction model
+- [x] Tableau dashboards
 
 ## 🚀 Quick Start
 ```bash
