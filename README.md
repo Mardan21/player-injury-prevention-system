@@ -1,7 +1,7 @@
 # Player Performance & Injury Prevention System
 
 ## 🎯 Project Overview
-An ML-powered system to predict football player injuries and optimize squad rotation using real data from Europe's top 5 leagues.
+An ML-powered system to predict football player injuries and optimize squad rotation using real data from Europe's top 5 leagues (2022-2023 season).
 
 ## 🛠️ Tech Stack
 - **SQL**: PostgreSQL with complex window functions and CTEs
