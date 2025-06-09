@@ -3,9 +3,12 @@
 ## 🎯 Project Overview
 An ML-powered system to predict football player injuries and optimize squad rotation using real data from Europe's top 5 leagues (2022-2023 season).
 
-<a href="https://public.tableau.com/views/Book1_17491428564750/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
-  <img src="assets/tableau-preview.png" alt="Dashboard Preview" width="600"/>
-</a>
+## 📈 Visualizations
+- ## Model Performance
+  ![model performance](visualizations/plots/model_performance.png)
+- ## Feature Importance
+  ![feature importance](visualizations/plots/model_performance.png)
+
 
 ## 🛠️ Tech Stack
 - **SQL**: PostgreSQL with complex window functions and CTEs
