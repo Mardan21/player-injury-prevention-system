@@ -7,7 +7,7 @@ An ML-powered system to predict football player injuries and optimize squad rota
 - ## Model Performance
   ![model performance](visualizations/plots/model_performance.png)
 - ## Feature Importance
-  ![feature importance](visualizations/plots/model_performance.png)
+  ![feature importance](visualizations/plots/feature_importance.png)
 
 
 ## 🛠️ Tech Stack
